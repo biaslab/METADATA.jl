@@ -1,5 +1,12 @@
-This is the official METADATA repo for the Julia package manager. See [manual section](http://docs.julialang.org/en/latest/manual/packages) on packages for how to use the package manager to install and develop packages.
+# SPS Brats METADATA repository
 
+This is the private METADATA repository for the Julia package manager for members of SPS Brats. It is kept up-to-date with the upstream repository as much as possible, but also contains our private packages which (at least currently) cannot be released to the general public.
+
+To use this repository issue `Pkg.init("git@github.com:spsbrats/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
+
+## Original README
+
+This is the official METADATA repo for the Julia package manager. See [manual section](http://docs.julialang.org/en/latest/manual/packages/) on packages for how to use the package manager to install and develop packages.
 
 Please note our current policies for accepting entries into METADATA.jl:
 
