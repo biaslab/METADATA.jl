@@ -4,6 +4,8 @@ This is the private METADATA repository for the Julia package manager for member
 
 To use this repository issue `Pkg.init("git@github.com:spsbrats/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
 
+When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`!
+
 ## Original README
 
 This is the official METADATA repo for the Julia package manager. See [manual section](http://docs.julialang.org/en/latest/manual/packages/) on packages for how to use the package manager to install and develop packages.
