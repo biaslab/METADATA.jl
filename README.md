@@ -4,7 +4,10 @@ This is the private METADATA repository for the Julia package manager for member
 
 To use this repository issue `Pkg.init("git@github.com:spsbrats/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
 
-When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`!
+When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`! Also, add the repository name to the list of (private) SPS Brats packages that are registered in the master branch. **Please keep this list up to date**. 
+
+- AudioIO.jl (our private fork)
+- HearingAid.jl
 
 ## Original README
 
