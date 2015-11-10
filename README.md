@@ -10,6 +10,31 @@ When adding a new (private) repository, make sure to set its URL in the `url` fi
 - ForneyLab.jl
 - HearingAid.jl
 
+## Pulling in changes from the upstream repository
+
+Packages available in the upstream repository will typically quickly become out-of-date with the private repository. To remedy this, they have to be synchronized. The steps to do so are documented below.
+
+### Initial Setup
+
+To be able to synchronize the two repositories a copy of the private repository is needed with the upstream repository added as an additional remote. From scratch this can be achieved using
+```shell
+$ git clone git@github.com:spsbrats/METADATA.jl.git
+$ cd METADATA.jl
+$ git remote add upstream git@github.com:JuliaLang/METADATA.jl.git
+$ git branch metadata-v2 origin/metadata-v2
+```
+
+### Performing Synchronization
+
+```shell
+$ git fetch --all
+$ git checkout metadata-v2
+$ git pull upstream metadata-v2
+$ git checkout master
+$ git rebase metadata-v2
+$ git push origin --force
+```
+
 ## Original README
 
 This is the official METADATA repo for the Julia package manager. See [manual section](http://docs.julialang.org/en/latest/manual/packages/) on packages for how to use the package manager to install and develop packages.
