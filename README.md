@@ -9,6 +9,7 @@ When adding a new (private) repository, make sure to set its URL in the `url` fi
 - AudioIO.jl (our private fork)
 - ForneyLab.jl
 - HearingAid.jl
+- ParameterizedTypes.jl
 
 ## Pulling in changes from the upstream repository
 
