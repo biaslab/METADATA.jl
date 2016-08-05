@@ -1,0 +1,11 @@
+julia 0.4
+
+AudioIO
+DSP
+Grid
+JSON
+Mux
+ParameterizedTypes
+PyPlot
+WAV
+ZMQ
