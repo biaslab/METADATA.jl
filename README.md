@@ -10,6 +10,7 @@ When adding a new (private) repository, make sure to set its URL in the `url` fi
 - ForneyLab.jl
 - HearingAid.jl
 - ParameterizedTypes.jl
+- TinyBShowcase.jl
 
 ## Pulling in changes from the upstream repository
 
