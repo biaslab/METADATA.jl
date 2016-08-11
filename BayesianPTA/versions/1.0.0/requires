@@ -1,0 +1,10 @@
+julia 0.3
+DataFrames
+PyPlot
+
+# Packages required for the web API
+JSON
+Morsel
+
+# Private packages
+GaussianProcessLab 1.0

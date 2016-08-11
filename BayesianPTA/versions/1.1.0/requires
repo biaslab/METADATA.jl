@@ -1,0 +1,12 @@
+julia 0.4
+DataFrames
+PyPlot
+Interact
+Reactive
+
+# Packages required for the web API
+JSON
+Mux
+
+# Private packages
+GaussianProcessLab 1.1.1
