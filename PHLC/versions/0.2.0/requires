@@ -1,0 +1,6 @@
+julia 0.5
+FactCheck
+Interpolations
+PyPlot
+ForneyLab 0.6
+ThijsFLExtensions 0.2
