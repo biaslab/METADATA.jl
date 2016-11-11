@@ -2,7 +2,7 @@
 
 This is the private METADATA repository for the Julia package manager for members of SPS Brats. It is kept up-to-date with the upstream repository as much as possible, but also contains our private packages which (at least currently) cannot be released to the general public.
 
-To use this repository issue `Pkg.init("git@github.com:spsbrats/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
+To use this repository issue `Pkg.init("git@github.com:biaslab/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
 
 When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`! Also, add the repository name to the list of (private) SPS Brats packages that are registered in the master branch. **Please keep this list up to date**. 
 
@@ -20,7 +20,7 @@ Packages available in the upstream repository will typically quickly become out-
 
 To be able to synchronize the two repositories a copy of the private repository is needed with the upstream repository added as an additional remote. From scratch this can be achieved using
 ```shell
-$ git clone git@github.com:spsbrats/METADATA.jl.git
+$ git clone git@github.com:biaslab/METADATA.jl.git
 $ cd METADATA.jl
 $ git remote add upstream git@github.com:JuliaLang/METADATA.jl.git
 $ git branch metadata-v2 origin/metadata-v2
