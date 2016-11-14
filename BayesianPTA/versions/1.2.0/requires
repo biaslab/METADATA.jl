@@ -1,0 +1,7 @@
+julia 0.5
+DataFrames
+PyPlot
+Interact
+Reactive
+# Private packages
+GaussianProcessLab 1.2.0
