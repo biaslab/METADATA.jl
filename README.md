@@ -7,9 +7,12 @@ To use this repository issue `Pkg.init("git@github.com:biaslab/METADATA.jl.git",
 When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`! Also, add the repository name to the list of (private) SPS Brats packages that are registered in the master branch. **Please keep this list up to date**. 
 
 - AudioIO.jl (our private fork)
+- BayesianPTA.jl
 - ForneyLab.jl
+- GaussianProcessLab.jl
 - HearingAid.jl
 - ParameterizedTypes.jl
+- ThijsFLExtensions.jl
 - TinyBShowcase.jl
 
 ## Pulling in changes from the upstream repository
