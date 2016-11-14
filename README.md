@@ -1,10 +1,10 @@
-# SPS Brats METADATA repository
+# BIASlab METADATA repository
 
-This is the private METADATA repository for the Julia package manager for members of SPS Brats. It is kept up-to-date with the upstream repository as much as possible, but also contains our private packages which (at least currently) cannot be released to the general public.
+This is the private METADATA repository for the Julia package manager for members of BIASlab. It is kept up-to-date with the upstream repository as much as possible, but also contains our private packages which (at least currently) cannot be released to the general public.
 
 To use this repository issue `Pkg.init("git@github.com:biaslab/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
 
-When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`! Also, add the repository name to the list of (private) SPS Brats packages that are registered in the master branch. **Please keep this list up to date**. 
+When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `git@github.com:organization/repository.jl.git`! Also, add the repository name to the list of (private) BIASlab packages that are registered in the master branch. **Please keep this list up to date**.
 
 - AudioIO.jl (our private fork)
 - BayesianPTA.jl
