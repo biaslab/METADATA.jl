@@ -1,0 +1,13 @@
+julia 0.5.0 0.6.0-
+
+JACKAudio 0.1.1 0.1.2-
+
+Mux 0.2.2 0.2.3-
+
+LibSndFile 0.5.0 0.5.1-
+SampledSignals 0.3.1 0.3.2-
+
+BayesianPTA 1.2.0 1.2.1-
+HearingAid 0.5.0 0.5.1-
+ParameterizedTypes 0.3.0 0.3.1-
+PHLC 0.2.1 0.2.2-
