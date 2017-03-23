@@ -2,7 +2,7 @@
 
 This is the private METADATA repository for the Julia package manager for members of BIASlab. It is kept up-to-date with the upstream repository as much as possible, but also contains our private packages which (at least currently) cannot be released to the general public.
 
-To use this repository issue `Pkg.init("ssh://git@github.com/biaslab/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This will completely reset your package repository, so *make sure* you don't have anything in `~/.julia/v0.x` that you cannot live without.
+To use this repository issue `Pkg.init("ssh://git@github.com/biaslab/METADATA.jl.git", "master")` from inside Julia. *NOTE:* This command will only succeed if the package repository has not yet been initialized through any of the `Pkg` commands (e.g. `resolve`, `update`, etc.). If a package repository has already been initialized, either remove it (e.g. `rm ~/.julia/v0.x`, substituting the proper Julia version) or back it up somewhere safe in case you have anything in it that you cannot live without.
 
 When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `ssh://git@github.com/organization/repository.jl.git`, to decrease issues with the private nature of this METADATA repository when cloning the packages within! Also, add the repository name to the list of (private) BIASlab packages that are registered in the master branch. **Please keep this list up to date**.
 
