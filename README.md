@@ -8,11 +8,11 @@ When adding a new (private) repository, make sure to set its URL in the `url` fi
 
 - AudioIO.jl (our private fork)
 - BayesianPTA.jl
+- FLEXpecs.jl
 - ForneyLab.jl
 - GaussianProcessLab.jl
 - HearingAid.jl
 - ParameterizedTypes.jl
-- ThijsFLExtensions.jl
 - TinyBShowcase.jl
 
 ## Pulling in changes from the upstream repository
