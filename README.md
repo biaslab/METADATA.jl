@@ -13,6 +13,7 @@ When adding a new (private) repository, make sure to set its URL in the `url` fi
 - GaussianProcessLab.jl
 - HearingAid.jl
 - ParameterizedTypes.jl
+- PHLC.jl
 - TinyBShowcase.jl
 
 ## Pulling in changes from the upstream repository
