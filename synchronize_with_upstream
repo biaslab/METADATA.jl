@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+
+BLUE=$(tput setaf 4)
+RED=$(tput setaf 1)
+NORMAL=$(tput sgr0)
+
+command -v git >/dev/null 2>&1 || \
+  {
+    printf >&2 "%s\n" "${RED}This script requires \`git\` but it's not installed. Aborting.${NORMAL}";
+    exit 1;
+  }
+
+if git ls-remote --exit-code upstream >/dev/null; then
+  printf "%s\n" "${BLUE}Updating \`metadata-v2\` from \`upstream\`"
+  git fetch --all
+  git checkout metadata-v2
+  git pull upstream metadata-v2
+
+  printf "Updating \`master\` from \`origin\` to prevent data loss\n"
+  git checkout master
+  git pull --rebase origin master
+
+  printf "Basing \`master\` off of most recent \`metadata-v2\` and publishing"
+  git rebase metadata-v2
+  git push origin --force
+
+  printf "%s\n" "${NORMAL}"
+else
+  printf >&2 "%s\n" "${RED}"
+  printf >&2 "This script requires the \`upstream\` remote to be configured.\n"
+  printf >&2 "Check the README for synchronization setup instructions."
+  printf >&2 "%s\n" "${NORMAL}"
+
+  exit 1
+fi

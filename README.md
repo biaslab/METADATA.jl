@@ -43,6 +43,8 @@ $ git rebase metadata-v2
 $ git push origin --force
 ```
 
+Or execute the `synchronize_with_upstream` script within a properly configured repository.
+
 ## Original README
 
 This is the official METADATA repo for the Julia package manager. See [manual section](http://docs.julialang.org/en/latest/manual/packages/) on packages for how to use the package manager to install and develop packages.
