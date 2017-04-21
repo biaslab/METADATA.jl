@@ -1,0 +1,8 @@
+julia 0.5
+PyPlot
+Distributions
+JLD
+TensorFlow
+Polynomials
+# Private packages
+GaussianProcessLab 1.3.0+
