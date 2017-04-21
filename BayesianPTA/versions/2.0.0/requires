@@ -1,0 +1,7 @@
+julia 0.5
+DataFrames
+PyPlot
+Polynomials
+# Private packages
+GaussianProcessLab 1.4.0+
+AudiogramPriors
