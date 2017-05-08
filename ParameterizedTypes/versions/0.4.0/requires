@@ -1,0 +1,7 @@
+julia 0.5
+
+HttpCommon 0.2.7
+HttpServer 0.2.0
+JSON 0.9.0
+Mux 0.2.3
+Requests 0.4.1
