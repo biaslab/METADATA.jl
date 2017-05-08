@@ -1,0 +1,8 @@
+julia 0.5
+
+DSP
+Grid
+ParameterizedTypes 0.4.0
+PyPlot
+SampledSignals 0.3.1
+WAV
