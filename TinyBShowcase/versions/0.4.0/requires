@@ -1,0 +1,22 @@
+julia 0.5.1 0.6.0-
+
+# (REST) API
+Mux 0.2.3 0.2.4-
+ParameterizedTypes 0.4.0 0.4.1-
+
+# Audio processing
+HearingAid 0.6.0 0.6.1-
+JACKAudio 0.1.1 0.1.2-
+LibSndFile 0.5.1 0.5.2-
+SampledSignals 0.3.1 0.3.2-
+
+AudiogramPriors 1.0.0 1.0.1-
+Distributions 0.12.5 0.12.6-
+GaussianProcessLab 1.4.0
+JLD 0.6.10- 0.6.11
+
+BayesianPTA 2.0.0 2.0.1-
+
+ArgmaxBandit 0.1.0 0.2.0-
+
+PHLC 0.2.2 0.2.3-
