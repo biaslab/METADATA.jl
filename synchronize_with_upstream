@@ -10,19 +10,29 @@ command -v git >/dev/null 2>&1 || \
     exit 1;
   }
 
+git diff-index --quiet HEAD -- || \
+  {
+    printf >&2 "%s\n" "${RED}Uncommited changes detected. Aborting.${NORMAL}";
+    exit 1;
+  }
+
 if git ls-remote --exit-code upstream >/dev/null; then
-  printf "%s\n" "${BLUE}Updating \`metadata-v2\` from \`upstream\`"
+  printf "%s\n" "${BLUE}Updating \`metadata-v2\` from \`upstream\`."
   git fetch --all
   git checkout metadata-v2
   git pull upstream metadata-v2
 
-  printf "Updating \`master\` from \`origin\` to prevent data loss\n"
+  printf "Updating \`master\` from \`origin\` to prevent data loss.\n"
   git checkout master
   git pull --rebase origin master
 
-  printf "Basing \`master\` off of most recent \`metadata-v2\` and publishing"
-  git rebase metadata-v2
-  git push origin --force
+  printf "Basing \`master\` off of most recent \`metadata-v2\` and publishing.\n"
+  git merge --no-commit metadata-v2
+  printf "Changes to be synchronized from upstream:\n"
+  git status --branch --short
+  git commit -m "chore(METADATA): synchronize with upstream"
+  git push origin master:master
+  git push origin metadata-v2:metadata-v2
 
   printf "%s\n" "${NORMAL}"
 else
