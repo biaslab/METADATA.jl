@@ -39,8 +39,8 @@ $ git pull upstream metadata-v2
 $ git checkout master
 # Make sure your current master branch is up-to-date!
 $ git pull --rebase origin master
-$ git rebase metadata-v2
-$ git push origin --force
+$ git merge metadata-v2
+$ git push origin
 ```
 
 Or execute the `synchronize_with_upstream` script within a properly configured repository.
