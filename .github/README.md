@@ -6,6 +6,8 @@ To use this repository issue `Pkg.init("ssh://git@github.com/biaslab/METADATA.jl
 
 When adding a new (private) repository, make sure to set its URL in the `url` file to one of the form `ssh://git@github.com/organization/repository.jl.git`, to decrease issues with the private nature of this METADATA repository when cloning the packages within! Also, add the repository name to the list of (private) BIASlab packages that are registered in the master branch. **Please keep this list up to date**.
 
+- ArgmaxBandit.jl
+- AudiogramPriors.jl
 - AudioIO.jl (our private fork)
 - BayesianPTA.jl
 - FLEXpecs.jl
